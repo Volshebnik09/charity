@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    // header: "../src/template/header/header.js",
+    header: "../src/template/header/header.js",
     // index: "../src/pages/index/index.js"
   },
   module: {

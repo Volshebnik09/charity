@@ -1,8 +1,7 @@
-// const burgerBtn = document.querySelector('.header__burger')
-// const headerPopup = document.querySelector('.header__popup')
-//
-// burgerBtn.addEventListener('click', (e)=>{
-//     e.stopPropagation()
-//     burgerBtn.toggleAttribute('active')
-//     headerPopup.toggleAttribute('active')
-// })
+const burgerBtn = document.querySelector('.header__burger-btn')
+const popup = document.querySelector('.header__popup__nav')
+
+burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('open')
+    popup.classList.toggle('open')
+})

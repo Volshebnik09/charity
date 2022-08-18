@@ -51,7 +51,7 @@ function transformPicture() {
 }
 function copyOtherImg(){
     return src(path.srcPath +'/assets/*.{png,jpeg,ico}')
-        .pipe(dest(path.distPath+'/images'))
+        .pipe(dest(path.buildPath+'/images'))
 }
 
 function buildJS() {

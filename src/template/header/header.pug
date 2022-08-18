@@ -1,4 +1,8 @@
 header.header
+    script(defer src='scripts/header.bundle.js')
     +nav().header__nav
     a(href='#')
         +sourceImg('nav__logo')
+    .header__burger-btn
+        span
+    +nav().header__popup__nav
