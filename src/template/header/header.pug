@@ -1,0 +1,16 @@
+header.header
+    script(src='scripts/header.bundle.js', defer)
+    .container
+        .header__logos
+            a(href="#")
+                img(src='images/template/header/TSUTBM_LOGO.webp')
+            a(href="#")
+                img(src='images/template/header/acc_logo.webp')
+        +nav().header__nav
+        a.header__button СТАТЬ ФАУНДЕРАМИ
+        .header__burger
+            .header__burger__line-1
+            .header__burger__line-2
+            .header__burger__line-3
+    .header__popup
+        +nav().header__popup__nav

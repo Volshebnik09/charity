@@ -1,0 +1,10 @@
+mixin nav(urls, names)
+    - if (!!names)
+    - names = ['О нас', 'Программы', 'Фаундеры', 'Эксперты', 'Дайджест', 'Контакты']
+    - if (!!urls)
+    - urls = []
+    nav(class!=attributes.class)
+        ul
+            - for (var i = 0; i < names.length; i++)
+                li
+                    a(href=urls[i]?urls[i]:'#')= names[i]
