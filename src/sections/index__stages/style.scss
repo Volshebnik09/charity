@@ -1,0 +1,100 @@
+.index__stages{
+  margin-top: 30px;
+  &__holder{
+    background: rgba(52, 169, 187, 0.1);
+    border-radius: 10px;
+    padding: 16px 20px;
+    >p{
+      margin-left: 13px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__highlights{
+      &__highlight{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        margin-left: 50px;
+        position: relative;
+        &:before{
+          position: absolute;
+          left: -50px;
+          content: '';
+          top:50%;
+          transform: translate(50%,-50%);
+          background: #87E4F3;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+        &:nth-child(1){
+          &:before{
+
+          }
+        }
+        &:nth-child(2){
+          &:before{
+            background: #34A9BB;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper{
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .line{
+      width: 100%;
+      height: 5px;
+
+      background: #87E4F399;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+
+
+    }
+    .swiper-slide{
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      cursor: pointer;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: relative;
+      background: #87E4F3;
+      border-radius: 50%;
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      /* identical to box height */
+
+
+      color: #000000;
+      &:nth-child(odd){
+        span{
+          position: absolute;
+          bottom: -110%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:nth-child(even){
+        span{
+          position: absolute;
+          top: -110%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  
+}
