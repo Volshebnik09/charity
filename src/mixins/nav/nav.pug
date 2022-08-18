@@ -1,10 +1,69 @@
-mixin nav(urls, names)
-    - if (!!names)
-    - names = ['О нас', 'Программы', 'Фаундеры', 'Эксперты', 'Дайджест', 'Контакты']
-    - if (!!urls)
-    - urls = []
+mixin nav(roots)
+    -
+        console.log(!roots)
+        if (!roots)
+            roots = [
+                {
+                    name: 'О нас',
+                    url: '#',
+                    additionalItems:[
+                        {
+                            name: 'Команда',
+                            url: '#',
+                        },
+                    ]
+                },
+                {
+                    name: 'Стационарный уход',
+                    url: '#',
+                    additionalItems: [
+                        {
+                            name: 'Тарифы',
+                            url: '#',
+                        },
+                        {
+                            name: 'Расчёт стоимости <br> прибывания',
+                            url: '#',
+                        },
+                    ]
+                },
+                {
+                    name: 'Новости',
+                    url: '#',
+                    additionalItems: [
+                        {
+                            name: 'Благотворительные программы',
+                            url: '#',
+                        },
+                    ]
+                },
+                {
+                    name: 'Контакты',
+                    url: '#',
+                    additionalItems: [
+                        {
+                            name: 'Реквизиты',
+                            url: '#',
+                        },
+                    ]
+                },
+                {
+                    name: 'Документы',
+                    url: '#',
+                    additionalItems: [
+                        {
+                            name: 'Отчёты',
+                            url: '#',
+                        },
+                    ]
+                },
+            ]
     nav(class!=attributes.class)
         ul
-            - for (var i = 0; i < names.length; i++)
+            each root in roots
                 li
-                    a(href=urls[i]?urls[i]:'#')= names[i]
+                    a(href=root.url ? root.url : '#')= root.name
+                    ul.NAV__additionalItems
+                        each item in root.additionalItems
+                            li
+                                a(href=item.url ? item.url : '#')!= item.name

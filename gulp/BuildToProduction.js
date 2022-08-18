@@ -44,9 +44,14 @@ function transformPicture() {
             method: 4,
         }))
         .pipe(rename(function (path){
-            path.dirname = path.dirname.split("\\").filter(el=> el != 'images').join('\\')
+            // path.dirname = path.dirname.split("\\").filter(el=> el != 'images').join('\\')
+            path.dirname = ''
         }))
         .pipe(dest(path.buildPath+'/images'))
+}
+function copyOtherImg(){
+    return src(path.srcPath +'/assets/*.{png,jpeg,ico}')
+        .pipe(dest(path.distPath+'/images'))
 }
 
 function buildJS() {
@@ -73,5 +78,6 @@ exports.default = async (cb) =>{
     buildCSS();
     buildJS();
     transformPicture();
+    copyOtherImg();
     cb();
 }

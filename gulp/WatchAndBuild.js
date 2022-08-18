@@ -41,6 +41,11 @@ function transformPicture() {
     .pipe(dest(path.distPath+'/images'))
 }
 
+function copyOtherImg(){
+    return src(path.srcPath +'/assets/*.{png,jpeg,ico}')
+        .pipe(dest(path.distPath+'/images'))
+}
+
 function buildJS() {
     return src('../src/[pages,template]/**/*.js')
         .pipe(webpackStream(
@@ -58,9 +63,11 @@ exports.default= (cb) =>{
     buildCSS();
     buildJS();
     transformPicture();
+    copyOtherImg();
     watch(path.srcPath + '/**/*.pug',buildPug);
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);
+    watch(path.srcPath +'/**/*.{png,jpeg,ico}',copyOtherImg);
     watch(path.srcPath + '/**/*.js', buildJS)
     cb();
 }
