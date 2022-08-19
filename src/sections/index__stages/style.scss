@@ -1,5 +1,6 @@
 .index__stages{
   margin-top: 30px;
+  margin-bottom: 140px;
   .container{
     position: relative;
   }
@@ -155,7 +156,7 @@
 
       color: #000000;
       &::-webkit-scrollbar{
-        width: 10px;
+        width: 7px;
         background: rgba(0, 0, 0, 0.05);
         border-radius: 30px;
         margin: 18px 12px;
