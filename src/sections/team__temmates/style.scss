@@ -1,0 +1,142 @@
+.team__teammates{
+
+
+  .team__teammates__teammate{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 85px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    min-height: 300px;
+    display: flex;
+    padding: 21px 31px;
+    gap: 0 33px;
+    margin-bottom: 50px;
+    &__img{
+      width: 222px;
+      height: 222px;
+      background: url("../images/placeholder.png") no-repeat  center;
+      img[src='images/.jpg']{
+        opacity: 0;
+      }
+    }
+    &__status{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      /* or 129% */
+      text-align: center;
+
+      color: #000000;
+      margin-top: 11px;
+
+    }
+    &__name{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+    }
+    &__work{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: end;
+      color: #000000;
+      margin-right: 27px;
+      position: relative;
+      &::after{
+        position: absolute;
+        top:50%;
+        right: -27px;
+        transform: translateY(-50%);
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: rgba(52, 169, 187, 0.6);
+        border-radius: 50%;
+      }
+    }
+    &__desc{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: justify;
+
+      color: #000000;
+    }
+    &__left-side{
+      justify-content: space-between;
+      flex-shrink: 0;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      width: 263px;
+      color: #000000;
+    }
+    &__right-side{
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+    &__showMore-btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team__teammates{
+
+    .team__teammates__teammate{
+      flex-direction: column;
+      position: relative;
+      gap: 20px;
+      max-height: 600px;
+      overflow: hidden;
+
+      &__showMore-btn {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: white;
+
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #000000;
+        cursor: pointer;
+        box-shadow: #000 1px 6px 8px 0px;
+      }
+      &.open{
+        max-height: 1000px;
+        transition: 0.5s;
+        .team__teammates__teammate__showMore-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
