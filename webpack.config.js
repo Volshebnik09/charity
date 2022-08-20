@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     // header: "../src/template/header/header.js",
     // index: "../src/pages/index/team.js",
-    team: "../src/pages/team/team.js",
+    // team: "../src/pages/team/team.js",
   },
   module: {
     rules: [{

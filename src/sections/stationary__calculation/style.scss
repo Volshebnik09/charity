@@ -1,0 +1,122 @@
+.stationary__calculation{
+  &__dotedText{
+    position: relative;
+    font-family: 'Jost',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #000000;
+    margin-left: 47px;
+    margin-top: 34px;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: -47px;
+      transform: translateY(-50%);
+      background: rgba(52, 169, 187, 0.6);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  &__calculator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      max-width: 580px;
+
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: justify;
+
+      color: #000000;
+    }
+    svg{
+      flex-shrink: 0;
+    }
+  }
+
+  &__flex-container{
+    display: flex;
+    gap: 0 42px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+  &__blue-card{
+    background: rgba(52, 169, 187, 0.22);
+    padding: 15px 20px;
+    max-width: 540px;
+    p:nth-child(1){
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+
+      color: #000000;
+
+    }
+    p:nth-child(2){
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+
+      color: #000000;
+    }
+    p:nth-child(3){
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+
+      color: #000000;
+      a{
+        color: #26717C;
+      }
+
+    }
+  }
+  &__right-side p{
+    font-family: 'Jost',serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+
+    color: #000000;
+  }
+}
+
+@media (max-width: 769px) {
+  .stationary__calculation{
+    &__flex-container{
+      flex-direction: column;
+    }
+  }
+
+}
+@media (max-width: 480px) {
+  .stationary__calculation{
+    &__calculator{
+      flex-direction: column-reverse;
+    }
+  }
+
+}
