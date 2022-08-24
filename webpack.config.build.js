@@ -6,6 +6,7 @@ module.exports = {
         index: "../src/pages/index/index.js",
         header: "../src/template/header/header.js",
         team: "../src/pages/team/team.js",
+        news: "../src/pages/news/news.js",
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
     },
     module: {

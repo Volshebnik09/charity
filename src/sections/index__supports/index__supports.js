@@ -15,8 +15,8 @@ export default() => {
             reverseDirection: true
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.news__news__swiper-button-next',
+            prevEl: '.news__news__swiper-button-prev',
         },
         // breakpoints: {
         //     1000: {
