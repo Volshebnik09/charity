@@ -104,3 +104,24 @@ h3{
   color: #000000;
 
 }
+.M-dotedText{
+  position: relative;
+  font-family: "Jost",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin-left: 47px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -47px;
+    transform: translateY(-50%);
+    background: rgba(52,169,187,.6);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}

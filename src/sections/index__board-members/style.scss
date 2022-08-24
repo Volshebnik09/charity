@@ -51,6 +51,15 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      &__status{
+        font-family: 'Jost',serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+
+        color: #000000;
+      }
     }
   }
 }

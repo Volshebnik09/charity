@@ -27,6 +27,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 53px;
+    margin-bottom: 40px;
     p{
       max-width: 580px;
 
@@ -38,9 +40,16 @@
       text-align: justify;
 
       color: #000000;
+      margin: 0;
     }
     svg{
       flex-shrink: 0;
+      filter: drop-shadow(4px 4px 85px rgba(0, 0, 0, 0.5));
+      margin-right: 170px;
+      transition: 0.5s;
+      &:hover{
+        transform: scale(1.05);
+      }
     }
   }
 
@@ -109,6 +118,11 @@
     &__flex-container{
       flex-direction: column;
     }
+    &__calculator{
+      svg{
+        margin: 0 50px;
+      }
+    }
   }
 
 }
@@ -116,6 +130,12 @@
   .stationary__calculation{
     &__calculator{
       flex-direction: column-reverse;
+      margin-top: 0px;
+    }
+    &__calculator{
+      svg{
+        margin: 20px;
+      }
     }
   }
 

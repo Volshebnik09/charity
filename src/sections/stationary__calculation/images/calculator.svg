@@ -1,26 +1,12 @@
-<svg width="240" height="259" viewBox="0 0 240 259" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_173_69)">
-<rect x="81" y="81.3334" width="70" height="88.6667" rx="7" fill="#34A9BB" fill-opacity="0.6"/>
-<rect x="89.1665" y="91.8334" width="53.6667" height="12.8333" rx="3" fill="white"/>
-<circle cx="95.5832" cy="116.917" r="6.41667" fill="white"/>
-<circle cx="115.417" cy="116.917" r="6.41667" fill="white"/>
-<circle cx="136.417" cy="116.917" r="6.41667" fill="white"/>
-<circle cx="115.417" cy="135.583" r="6.41667" fill="white"/>
-<circle cx="95.5832" cy="135.583" r="6.41667" fill="white"/>
-<circle cx="136.417" cy="135.583" r="6.41667" fill="white"/>
-<circle cx="136.417" cy="154.25" r="6.41667" fill="white"/>
-<rect x="89.1665" y="147.833" width="32.6667" height="12.8333" rx="5" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_d_173_69" x="0" y="0.333374" width="240" height="258.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="4" dy="4"/>
-<feGaussianBlur stdDeviation="42.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_173_69"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_173_69" result="shape"/>
-</filter>
-</defs>
+<svg width="70" height="89" viewBox="0 0 70 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="0.333374" width="70" height="88.6667" rx="7" fill="#34A9BB" fill-opacity="0.6"/>
+<rect x="8.1665" y="10.8334" width="53.6667" height="12.8333" rx="3" fill="white"/>
+<circle cx="14.5832" cy="35.9167" r="6.41667" fill="white"/>
+<circle cx="34.4167" cy="35.9167" r="6.41667" fill="white"/>
+<circle cx="55.4167" cy="35.9167" r="6.41667" fill="white"/>
+<circle cx="34.4167" cy="54.5833" r="6.41667" fill="white"/>
+<circle cx="14.5832" cy="54.5833" r="6.41667" fill="white"/>
+<circle cx="55.4167" cy="54.5833" r="6.41667" fill="white"/>
+<circle cx="55.4167" cy="73.25" r="6.41667" fill="white"/>
+<rect x="8.1665" y="66.8334" width="32.6667" height="12.8333" rx="5" fill="white"/>
 </svg>

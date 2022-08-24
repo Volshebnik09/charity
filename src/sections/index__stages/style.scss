@@ -5,10 +5,12 @@
     position: relative;
   }
   &__holder{
-
+    h2{
+      margin: 0;
+    }
     background: rgba(52, 169, 187, 0.1);
     border-radius: 10px;
-    padding: 16px 20px;
+    padding: 11px 20px 16px;
     padding-bottom: 80px;
 
     >p{
