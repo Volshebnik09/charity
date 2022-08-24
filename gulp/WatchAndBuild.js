@@ -30,7 +30,7 @@ function buildCSS (){
 }
 
 function transformPicture() {
-    return src(path.srcPath +'/assets/*.{png,jpeg}')
+    return src(path.srcPath +'/assets/**/*.{png,jpeg}')
     .pipe(webp({
         method: 1,
     }))
