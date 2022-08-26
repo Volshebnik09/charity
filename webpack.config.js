@@ -7,7 +7,8 @@ module.exports = {
     // header: "../src/template/header/header.js",
     // index: "../src/pages/index/team.js",
     // team: "../src/pages/team/team.js",
-    news: "../src/pages/news/news.js",
+    // news: "../src/pages/news/news.js",
+    charityPrograms: "../src/pages/charityPrograms/charityPrograms.js",
   },
 
   module: {
