@@ -74,6 +74,15 @@
   .news__MM__swiper-content.active{
     display: block;
   }
+  .news__MM__swiper-content p{
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #000000;
+  }
 }
 
 @media (max-width: 480px){
