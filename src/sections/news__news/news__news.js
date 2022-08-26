@@ -29,4 +29,21 @@ export default() => {
         // e.wrapperEl.children[e.clickedIndex].classList.add('active')
         // contents[e.clickedIndex].classList.add('active');
     })
+
+    let categories = document.querySelectorAll('.news__news__categories__category')
+
+    let swiperWrapper = document.querySelector('.news__news__swiper .swiper-wrapper')
+
+    swiperWrapper.setAttribute('cat', 0)
+    for (let i = 0; i < categories.length; i++) {
+        categories[i].addEventListener('click',(e)=>{
+            categories.forEach((category)=>{
+                category.classList.remove('active')
+            })
+            categories[i].classList.add('active')
+            swiperWrapper.setAttribute('cat', i)
+            swiper.update()
+        })
+
+    }
 }

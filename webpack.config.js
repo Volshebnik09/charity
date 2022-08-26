@@ -2,12 +2,14 @@ var path = require('path');
 
 module.exports = {
   mode: 'development',
+  watch: true,
   entry: {
     // header: "../src/template/header/header.js",
     // index: "../src/pages/index/team.js",
     // team: "../src/pages/team/team.js",
     news: "../src/pages/news/news.js",
   },
+
   module: {
     rules: [{
       test: /\.m?js$/,

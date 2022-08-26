@@ -56,6 +56,7 @@ function buildJS() {
             this.emit('end'); // Don't stop the rest of the task
         })
         .pipe(dest(path.distPath))
+
 }
 
 exports.default= (cb) =>{
@@ -68,6 +69,6 @@ exports.default= (cb) =>{
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);
     watch(path.srcPath +'/**/*.{png,jpeg,ico}',copyOtherImg);
-    watch(path.srcPath + '/**/*.js', buildJS)
+    // watch(path.srcPath + '/**/*.js', buildJS)
     cb();
 }
