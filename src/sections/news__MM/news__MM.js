@@ -41,6 +41,7 @@ export default() => {
         curPage = page
         contents[curPage].classList.add('active');
         slides[curPage].classList.add('active');
+        swiper.slideTo(curPage)
     }
 
 
