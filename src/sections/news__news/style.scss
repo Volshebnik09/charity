@@ -52,7 +52,6 @@
     padding: 20px 0px;
     position: relative;
     margin: 10px 50px;
-
   }
   .swiper-slide{
     width: 205px;
@@ -147,6 +146,30 @@
   .swiper-wrapper[cat="3"]{
     .swiper-slide.cat-3{
       display: block;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .news__news{
+    &__categories{
+      &__holder{
+          margin: auto;
+      }
+    }
+  }
+}
+@media (max-width: 500px){
+  .news__news{
+    &__categories{
+      &__holder{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .swiper{
+      margin: 10px 0px;
     }
   }
 }

@@ -8,6 +8,8 @@ export default() => {
         spaceBetween: 20,
         speed:700,
         modules: [Navigation],
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         navigation: {
             nextEl: '.news__news__swiper-button-next',
             prevEl: '.news__news__swiper-button-prev',
@@ -46,4 +48,5 @@ export default() => {
         })
 
     }
+    swiper.update()
 }
