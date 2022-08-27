@@ -8,6 +8,7 @@ module.exports = {
         team: "../src/pages/team/team.js",
         news: "../src/pages/news/news.js",
         charityPrograms: "../src/pages/charityPrograms/charityPrograms.js",
+        contacts: "../src/pages/contacts/contacts.js"
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
     },
     module: {

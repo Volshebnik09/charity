@@ -1,0 +1,161 @@
+section.contacts__contacts
+    .container
+        h2
+            | Контакты
+        .contacts__contacts__selects
+            .contacts__contacts__select
+                +sourceImg('homeIc')
+                p.contacts__contacts__select__text
+                    | Отделение сестирнского ухода <br>
+                    span  Село Иноковка 2-я
+            .contacts__contacts__select.active
+                +sourceImg('locIc')
+                p.contacts__contacts__select__text
+                    | Головной офис
+            .contacts__contacts__select
+                +sourceImg('homeIc')
+                p.contacts__contacts__select__text
+                    | Отделение сестирнского ухода <br>
+                    span  Село Сосновка
+
+        .contacts__contacts__contact
+            .contacts__contacts__contact__top
+                .contacts__contacts__contact__top__workTime
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span ПН ВТ СР ЧТ ПТ
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span 08:00 - 16:00
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span СБ ВС
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span Выходной
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span Работа внутри отделения
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span Круглосуточно
+                .contacts__contacts__contact__top__phone
+                    .contacts__contacts__contact__top__phone-img
+                        +sourceImg('phone')
+                    .contacts__contacts__contact__top__phone__name
+                        | Малицкая  <br>
+                        | Ольга Ивановна
+                    .contacts__contacts__contact__top__phone__number
+                        | +7 (4753) 76-37-25
+            p.contacts__contacts__contact__address
+                | 393385, Тамбовская область, Кирсановский район, село Иноковка 2-я, ул. Верхняя Луговка, дом № 14 "В"
+            .contacts__contacts__contact__picture
+                +sourceImg('5555')
+            iframe.contacts__contacts__contact__map(
+                src="https://yandex.ru/map-widget/v1/-/CCUVEGAEwB"
+                width="100%"
+                height="404"
+                frameborder="0"
+            )
+        .contacts__contacts__contact.active
+            .contacts__contacts__contact__top
+                .contacts__contacts__contact__top__workTime
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span ПН ВТ СР ЧТ ПТ
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span 08:00 - 17:00
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span СБ ВС
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span Выходной
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span Перерыв
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span 12:00 - 12:45
+                .contacts__contacts__contact__top__phone
+                    .contacts__contacts__contact__top__phone-img
+                        +sourceImg('phone')
+                    .contacts__contacts__contact__top__phone__name
+                        | Уланова Наталия <br> Владимировна
+                    .contacts__contacts__contact__top__phone__number
+                        | +7 (4752) 71-11-73
+                    .contacts__contacts__contact__top__phone__number
+                        | +7 (910) 755-10-68
+                .contacts__contacts__contact__top__links
+                    .contacts__contacts__contact__top__links__link
+                        +sourceImg('vk').left
+                        a(href='https://vk.com/opeka365') https://vk.com/opeka365
+                    .contacts__contacts__contact__top__links__link
+                        span.left E-mail:
+                        span
+                            a(href='info@opeka365.ru') info@opeka365.ru <br>
+                            a(href='info@opeka365.ru') ano.opeka@gmail.com
+            p.contacts__contacts__contact__address
+                | Юридический/фактический адрес: 392018, Тамбовская область, г. Тамбов, ул. Широкая д.4
+            .contacts__contacts__contact__picture
+                +sourceImg('Pic')
+            iframe.contacts__contacts__contact__map(
+                src="https://yandex.ru/map-widget/v1/-/CCUVECCIsD"
+                width="100%"
+                height="404"
+                frameborder="0"
+                )
+            .contacts__contacts__contact__apparatus
+                h2
+                    | Контролирующие органы
+                .contacts__contacts__contact__apparatus__flex-box
+                    .contacts__contacts__contact__apparatus__card
+                        p.contacts__contacts__contact__apparatus__card__top
+                            | Управление Здравоохранения <br>
+                            | Тамбовской области
+                        p.contacts__contacts__contact__apparatus__card__bottom
+                            | Адрес: ул. Советская, 106, Тамбов <br>
+                            | Контактный телефон: +7 (4752) 79-25-12
+                    .contacts__contacts__contact__apparatus__card
+                        p.contacts__contacts__contact__apparatus__card__top
+                            | Роспотребнадзор
+                        p.contacts__contacts__contact__apparatus__card__bottom
+                            | Адрес: г. Тамбов, ул. Б. Васильева, д. 5 <br>
+                            | Контактый телефон: +7 (4752) 47-25-12
+                    .contacts__contacts__contact__apparatus__card
+                        p.contacts__contacts__contact__apparatus__card__top
+                            |Росздравнадзор
+                        p.contacts__contacts__contact__apparatus__card__bottom
+                            | Адрес: г.Тамбов, ул.Урожайная, д. 2 Ж <br>
+                            | Контактый телефон: +7 (4752) -63-32-14
+        .contacts__contacts__contact
+            .contacts__contacts__contact__top
+                .contacts__contacts__contact__top__workTime
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span ПН ВТ СР ЧТ ПТ
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span 08:00 - 16:00
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span СБ ВС
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span Выходной
+                    .contacts__contacts__contact__top__workTime__block
+                        .contacts__contacts__contact__top__workTime__block__top
+                            span Работа внутри отделения
+                        .contacts__contacts__contact__top__workTime__block__bottom
+                            span Круглосуточно
+                .contacts__contacts__contact__top__phone
+                    .contacts__contacts__contact__top__phone-img
+                        +sourceImg('phone')
+                    .contacts__contacts__contact__top__phone__name
+                        | Абдулмажидов <br>
+                        | Юсуп Ибрагимович
+                    .contacts__contacts__contact__top__phone__number
+                        | +7 (47542) 7-65-13
+            p.contacts__contacts__contact__address
+                | 392090, Тамбовская область, Мордовский район, село Сосновка, ул. Трудовая, дом № 3
+            .contacts__contacts__contact__picture
+                +sourceImg('bg')
+            iframe.contacts__contacts__contact__map(
+                src="https://yandex.ru/map-widget/v1/-/CCUVEGulKD"
+                width="100%"
+                height="404"
+                frameborder="0"
+            )
