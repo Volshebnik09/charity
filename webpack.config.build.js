@@ -8,8 +8,20 @@ module.exports = {
         team: "../src/pages/team/team.js",
         news: "../src/pages/news/news.js",
         charityPrograms: "../src/pages/charityPrograms/charityPrograms.js",
-        contacts: "../src/pages/contacts/contacts.js"
+        contacts: "../src/pages/contacts/contacts.js",
+        helpNow: "../src/pages/helpNow/helpNow.js"
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: "all"
+                }
+            }
+        }
     },
     module: {
         rules: [{
