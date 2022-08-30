@@ -62,22 +62,27 @@
        }
     }
     @media (max-width: 870px) {
-      width: 110px;
+      //width: 110px;
+      width: 30%;
       height: 240px;
+      justify-content: flex-start;
       img{
-        width: 60%;
-        position: absolute;
-        top:10%;
-        left: 50%;
-        transform: translateX(-50%);
+        //width: 60%;
+        //position: absolute;
+        //top:10%;
+        //left: 50%;
+        transform: translateX(0);
+        margin: 10px 0 0 0;
+        padding: 0 10px;
       }
       p{
-        top: 90px;
+        top: unset;
+        position: relative;
         padding:  0 5px;
       }
     }
     @media (max-width: 380px) {
-      width: 90px;
+      //width: 90px;
       height: 240px;
       img{
         width: 60%;
@@ -85,6 +90,8 @@
         top:10%;
         left: 50%;
         transform: translateX(-50%);
+        padding: 0 ;
+
       }
       p{
         top: 90px;
