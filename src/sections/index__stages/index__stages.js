@@ -7,6 +7,7 @@ export default() => {
         slidesPerView: 'auto',
         spaceBetween: 70,
         centeredSlides: true,
+        centeredSlidesBounds:true,
         speed:700,
         modules: [Navigation],
     });
