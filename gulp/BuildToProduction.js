@@ -9,6 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const webpack = require('webpack');
 const rename = require('gulp-rename');
 const minify = require('gulp-minify');
+const autoprefixer = require('gulp-autoprefixer');
 
 const webpackStream = require("webpack-stream");
 
@@ -23,7 +24,6 @@ function buildPug (cb) {
             dirname:"",
         }))
         .pipe(dest(path.buildPath));
-    cb();
 };
 
 function buildCSS (){
@@ -35,6 +35,7 @@ function buildCSS (){
         .pipe(autoprefixer({
             cascade: false,
         }))
+        .pipe(autoprefixer('last 2 versions'))
         .pipe(dest(path.buildPath + '/styles'));
 }
 

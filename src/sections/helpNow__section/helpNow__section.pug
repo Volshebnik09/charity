@@ -1,1 +1,35 @@
 section.helpNow__section
+    .container
+        h2
+            | Помочь сейчас
+        .helpNow__section__selects
+            .helpNow__section__select
+                .helpNow__section__select-img
+                    +sourceImg('creditCard')
+                p.helpNow__section__select-title
+                    | Банковской <br>
+                    | картой
+            a(href="https://nuzhnapomosh.ru/funds/opeka/").helpNow__section__select
+                .helpNow__section__select-img
+                    +sourceImg('image62')
+                p.helpNow__section__select-title
+                    | Через сайт <br>
+                    | “Нужна помощь”
+            .helpNow__section__select
+                .helpNow__section__select-img
+                    +sourceImg('vl')
+                p.helpNow__section__select-title
+                    | Став нашим  <br>
+                    | волонтером
+            .helpNow__section__select
+                .helpNow__section__select-img
+                    +sourceImg('bag')
+                p.helpNow__section__select-title
+                    |Иная помощь
+        .helpNow__section__content-holder
+            include ../../components/helpNow__section__content-4/helpNow__section__content-4
+            .keep
+                | direct
+            include ../../components/helpNow__section__content-3/helpNow__section__content-3
+            include ../../components/helpNow__section__content-1/helpNow__section__content-1
+

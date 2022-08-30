@@ -1,0 +1,72 @@
+form.helpNow__section__content-4
+    .helpNow__section__content-4__head
+        .helpNow__section__content-4__head__logo
+            +sourceImg('logo2')
+        p.helpNow__section__content-4__head__title
+            |Здравствуйет! Вы собираетесь сделать пожертвование в пользу нашей автономной некоммерческой организации “Опека”
+    .helpNow__section__content-4__type
+        p.helpNow__section__content-4__type__title
+            |Тип пожертвования
+        .helpNow__section__content-4__type__holder
+            input(type='radio' id='Ежемесячное' value="regular" name='type')
+            label(for="Ежемесячное")
+                .customCheckBox
+                    +sourceImg('yes')
+                | Ежемесячное
+            input(type='radio' id='Разовое' value="once" name='type' checked)
+            label(for="Разовое")
+                .customCheckBox
+                    +sourceImg('yes')
+                | Разовое
+        .helpNow__section__content-4__type__warning
+            | Ежемесечное пожертвование раз в месяц списывается с банковской карты или PayPal.<br>
+            | В любой момент вы сможете отключить его.
+    .helpNow__section__content-4__amount
+        p.helpNow__section__content-4__amount__title
+            |Сумма пожертвования
+        .helpNow__section__content-4__amount__holder
+            -
+                arr = [100,200,500,750,1000,1500,2000,3000,5000,10000]
+
+            for item in arr
+                input(type='radio' id=item name='amount' value=item)
+                label(for=item)!=item
+                    |  ₽
+
+            input(type='radio' id='customValue' name='amount' value='customValue')
+            label(for="customValue" id="customValueLabel")
+                input(type='text' placeholder="Другая сумма")
+                span  ₽
+    .helpNow__section__content-4__fullName
+        p.helpNow__section__content-4__fullName__title
+            | Имя и фамилия
+        .helpNow__section__content-4__fullName__holder
+            input(type='text' name='name' placeholder='Введите ваше имя')
+            input(type='text' name='surname' placeholder='Введите вашу фамилию')
+    .helpNow__section__content-4__contacts
+        p.helpNow__section__content-4__contacts__title
+            | Контактная информация
+        .helpNow__section__content-4__contacts__holder
+            .helpNow__section__content-4__contacts__holder__input
+                input(type='tel' name='tel' placeholder='Введите ваш номер телефона')
+                a(href='##')
+                    | Зачем указывать номер телефона?
+            input(type='email' name='email' placeholder='Введите ваш email')
+    .helpNow__section__content-4__credits
+        .helpNow__section__content-4__credits__label
+            input(type='checkbox' id='publicOffer' name='type')
+            label(for="publicOffer")
+                .customCheckBox
+                    +sourceImg('yes')
+                .right
+                    p Я принимаю условия договора о благотворрительном пожертвоании (публичная оферта)
+                    span Пожалуста, подтвердите согласие
+        .helpNow__section__content-4__credits__label
+            input(type='checkbox' id='treatment' name='type')
+            label(for="treatment")
+                .customCheckBox
+                    +sourceImg('yes')
+                .right
+                    p Предоставляя свои персональные данные. выражаю свое согласие на их обработку, а так же подтверждаю ознокомление с условиями Политики АНО “Опека” в области обработки и обеспечения безопасности персональных данных
+                    span Пожалуста, подтвердите согласие
+    button(type="submit").helpNow__section__content-4__submit Продолжить

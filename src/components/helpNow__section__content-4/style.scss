@@ -1,0 +1,417 @@
+.helpNow__section__content-4{
+  input[type=radio],input[type=checkbox]{
+    display: none;
+  }
+  .customCheckBox{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: rgba(52, 169, 187, 0.22);
+    border-radius: 5px;
+    display: block;
+    img{
+      display: none;
+      position: absolute;
+      top:50%;
+      left:50%;
+      width: 60%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  input:checked + label .customCheckBox{
+    img{
+      display: block;
+    }
+  }
+  label{
+    cursor: pointer;
+  }
+
+  max-width: 880px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  margin: auto;
+  padding: 55px 70px;
+  @media (max-width: 768px) {
+    padding: 55px 25px;
+  }
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 44px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    &__logo{
+      width: 121px;
+      height: 114px;
+      flex-shrink: 0;
+    }
+    &__title{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+
+      color: rgba(53, 90, 96, 0.6);
+    }
+  }
+
+  &__type{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a b" "c d";
+    @media (max-width: 768px) {
+      grid-template-areas: "a b" "d d";
+      grid-template-columns: 2fr 1fr;
+    }
+    @media (max-width: 480px) {
+      grid-template-areas: "a" "b" "d";
+      grid-template-columns: 1fr;
+    }
+    &__title{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+    &__holder {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      justify-content: center;
+      label{
+        display: flex;
+        gap:15px;
+        align-items: center;
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height */
+
+
+        color: #000000;
+      }
+    }
+    &__warning{
+      grid-area: d;
+
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+
+      color: rgba(53, 90, 96, 0.6);
+
+
+    }
+  }
+  &__amount{
+    gap: 20px 0;
+    &__title{
+      font-family: 'Jost',serif;
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.2fr;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      &__holder{
+        justify-content: center;
+      }
+    }
+
+
+    &__holder{
+      display: flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      label{
+        background: rgba(52, 169, 187, 0.22);
+        transition: 0.2s;
+        border-radius: 5px;
+        width: 90px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height */
+
+
+        color: #000000;
+        overflow: hidden;
+        &:nth-last-child(1){
+          width: 190px;
+        }
+        input{
+          width: 100%;
+          margin-left: 5px;
+          height: 100%;
+          background: transparent;
+          border: none;
+          outline: none;
+
+          font-family: 'Jost', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          /* identical to box height */
+          text-align: center;
+
+
+          color: #000000;
+
+          input::placeholder{
+            font-family: 'Jost',serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            /* identical to box height */
+
+
+            color: #000000;
+          }
+        }
+        span{
+          margin: 0 10px;
+        }
+      }
+      input:checked + label{
+        background: rgba(52, 169, 187, 0.8);
+      }
+    }
+  }
+  &__fullName{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.2fr;
+    margin-top: 30px;
+    gap: 20px 0;
+    &__title{
+      font-family: 'Jost',serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      /* identical to box height */
+
+
+      color: #000000;
+      margin: 0px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      &__holder{
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    &__holder{
+      display: flex;
+      gap: 10px;
+      input{
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        background: rgba(52, 169, 187, 0.22);
+        border-radius: 5px;
+        width: 180px;
+        height: 40px;
+        outline: none;
+        border: none;
+        +input{
+          width: 199px;
+        }
+        &::placeholder{
+          font-family: 'Jost', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: rgba(53, 90, 96, 0.6);
+        }
+      }
+    }
+  }
+  &__contacts{
+    margin-top: 30px;
+    display: grid;
+    gap: 20px 0;
+    align-items: center;
+    grid-template-columns: 1fr 1.2fr;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      &__holder{
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    &__title{
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      /* identical to box height */
+      margin: 0px;
+
+      color: #000000;
+
+    }
+    &__holder{
+      display: flex;
+      gap:30px 10px;
+      input{
+        width: 160px;
+        height: 40px;
+        background: rgba(52, 169, 187, 0.22);
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        text-align: center;
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        &::placeholder{
+          font-family: 'Jost', serif;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+
+          color: rgba(53, 90, 96, 0.6);
+        }
+      }
+      &__input{
+        position: relative;
+        width: 220px;
+        height: 40px;
+        a{
+          font-family: 'Jost', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+
+          color: rgba(53, 90, 96, 0.6);
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+        input{
+
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+  &__credits{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    &__label{
+      label{
+        display: flex;
+        align-items: center;
+        gap:47px;
+        .customCheckBox{
+          flex-shrink: 0;
+          width: 42px;
+          height: 42px;
+          background: rgba(52, 169, 187, 0.22);
+          border-radius: 10.5px;
+        }
+
+        p{
+          margin: 0;
+          font-family: 'Jost', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: justify;
+
+          color: #000000;
+
+        }
+        span{
+          font-family: 'Jost', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+
+          color: rgba(53, 90, 96, 0.6);
+
+        }
+      }
+    }
+  }
+  &__submit{
+    background: rgba(52, 169, 187, 0.8);
+    border-radius: 6.75px;
+    width: 216px;
+    height: 54px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 74px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.6px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+  }
+}
+
+
+

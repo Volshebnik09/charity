@@ -6,7 +6,7 @@ const pug = require('gulp-pug');
 const webpackStream = require('webpack-stream');
 const webp = require('gulp-webp');
 const rename = require('gulp-rename');
-
+const autoprefixer = require('gulp-autoprefixer');
 function buildPug () {
     return src(path.srcPath + '/pages/**/*.pug')
         .pipe(
@@ -14,6 +14,7 @@ function buildPug () {
                 pretty:true,
             })
         )
+
         .pipe(rename({
             dirname:"",
         }))
@@ -26,6 +27,9 @@ function buildCSS (){
         .pipe(sass({
             outputStyle:'compressed',
         }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            cascade: false,
+        }))
         .pipe(dest(path.distPath + '/styles'));
 }
 
