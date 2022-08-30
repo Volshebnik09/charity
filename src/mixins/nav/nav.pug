@@ -56,13 +56,19 @@ mixin nav(roots)
                         },
                     ]
                 },
+                {
+                    name: 'Помочь сейчас',
+                    url: 'helpNow',
+                    additionalItems: []
+                }
             ]
     nav(class!=attributes.class)
         ul
             each root in roots
                 li
                     a(href=root.url ? root.url : '#')= root.name
-                    ul.NAV__additionalItems
-                        each item in root.additionalItems
-                            li
-                                a(href=item.url ? item.url : '#')!= item.name
+                    if (root.additionalItems.length > 0)
+                        ul.NAV__additionalItems
+                            each item in root.additionalItems
+                                li
+                                    a(href=item.url ? item.url : '#')!= item.name

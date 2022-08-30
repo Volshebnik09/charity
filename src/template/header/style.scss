@@ -22,7 +22,7 @@
       align-items: center;
       > li {
         position: relative;
-        padding: 0 55px 0px;
+        padding: 0 35px 0px;
         &:before{
           content: '';
           position: absolute;
@@ -122,7 +122,7 @@
     }
   }
 }
-@media (max-width: 768px){
+@media (max-width: 1000px){
   .header{
     &__nav{
       display: none;
