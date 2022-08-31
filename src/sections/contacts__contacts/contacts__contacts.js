@@ -21,4 +21,12 @@ export default ()=>{
             contacts[i].classList.add('active')
         })
     }
+
+
+    contacts.forEach((contact)=>{
+        const times = contact.querySelectorAll('.timeFormJs')
+        const day = new Date().getDay()
+        times[day].style.fontWeight ='700'
+
+    })
 }

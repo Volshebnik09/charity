@@ -408,8 +408,12 @@
     font-weight: 700;
     font-size: 21.6px;
     line-height: 31px;
+    transition: 0.2s;
 
     color: #FFFFFF;
+    &[disabled]{
+      background: rgba(52, 169, 187, 0.2);
+    }
   }
 }
 
