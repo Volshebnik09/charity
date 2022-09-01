@@ -9,7 +9,8 @@ module.exports = {
         news: "../src/pages/news/news.js",
         charityPrograms: "../src/pages/charityPrograms/charityPrograms.js",
         contacts: "../src/pages/contacts/contacts.js",
-        helpNow: "../src/pages/helpNow/helpNow.js"
+        helpNow: "../src/pages/helpNow/helpNow.js",
+        requisites: "../src/pages/requisites/requisites.js",
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
     },
     optimization: {
