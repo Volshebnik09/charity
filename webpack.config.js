@@ -13,6 +13,7 @@ module.exports = {
     // contacts: "../src/pages/contacts/contacts.js",
     // helpNow: "../src/pages/helpNow/helpNow.js",
     requisites: "../src/pages/requisites/requisites.js",
+    reports: "../src/pages/reports/reports.js",
   },
   optimization: {
     splitChunks: {
