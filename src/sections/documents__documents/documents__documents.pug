@@ -1,0 +1,31 @@
+section.documents__documents
+    .container
+        h2
+            | Документы
+        - let  placeholder = 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Placeholder.pdf'
+        .documents__documents__selectors
+            .documents__documents__selector(data-src='https://upload.wikimedia.org/wikipedia/commons/a/a4/Placeholder.pdf')
+                p.documents__documents__selector__inner
+                    | Лицензия
+            .documents__documents__selector(data-src='https://drive.google.com/file/d/11yfRPIvanbF-yaVDv1FhU-CGovfg0s7R/view?usp=sharing')
+                p.documents__documents__selector__inner
+                    | Свидетельство о государственной регистрации некоммерческой организации
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Свидетельство о пастановке на учет российской организации в налоговом органе по месту ее нахождения
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Устав АНО “Опека”
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Свидетельство о государственной регистрации юридического лица
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Постановление администрации Тамбовской области №1326 от 30.10.2014 г.
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Постановление администрации Тамбовской области №1216 от 18.10.2016 г.
+            .documents__documents__selector(data-src=placeholder)
+                p.documents__documents__selector__inner
+                    | Бланк заявления на предоставление социальной услуги в стационарной форме
+        iframe.documents__documents__document(src=placeholder)

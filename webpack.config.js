@@ -12,8 +12,9 @@ module.exports = {
     // charityPrograms: "../src/pages/charityPrograms/charityPrograms.js",
     // contacts: "../src/pages/contacts/contacts.js",
     // helpNow: "../src/pages/helpNow/helpNow.js",
-    requisites: "../src/pages/requisites/requisites.js",
-    reports: "../src/pages/reports/reports.js",
+    // requisites: "../src/pages/requisites/requisites.js",
+    // reports: "../src/pages/reports/reports.js",
+    documents: "../src/pages/documents/documents.js",
   },
   optimization: {
     splitChunks: {
