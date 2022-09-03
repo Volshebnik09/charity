@@ -66,21 +66,21 @@
     })
 
 
-    const _ = require('lodash');
+    const _template = require('lodash/template');
     const printTable = () =>{
         const printWindow = window.open('', '','width=500, height=700' );
-        let table = _.template(` 
+        let table = _template(` 
             <table> 
                 <tr>
                     <th colspan="2">    
                         Выбранные услуги, оказываемые отделениями сестринского ухода в АНО «Опека» <br> <u>
 <% if (program === 'individual') {%> по индивидуальной программе<%}%>
 <% if (program === 'paid') {%> Полностью на платной основе <%}%>
-</u>
+</u> 
                     </th>
-                </tr>
+                </tr> 
                 <%= header %>
-                <% _.forEach(options, (option)=>{ %>
+                <% options.forEach( (option)=>{ %>
                     <tr>
                         <td>
                             <%= option.text %>
@@ -101,11 +101,10 @@
                        <%= options.reduce((acc, a) =>{return acc + parseFloat(a.value)},0) %> руб.
                     </td>
                 </tr>
-                
             </table>
             <%= styles%>
-`)
-        let header = _.template(`
+            `)
+        let header = _template(`
             <tr>
                 <th>
                     Услуга
@@ -116,7 +115,7 @@
             </tr>
         `)
 
-        let styles = _.template(`
+        let styles = _template(`
         <style>
             *{
                 font-family: "Times New Roman", Times, serif;
