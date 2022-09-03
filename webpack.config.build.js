@@ -13,6 +13,7 @@ module.exports = {
         requisites: "../src/pages/requisites/requisites.js",
         reports: "../src/pages/reports/reports.js",
         documents: "../src/pages/documents/documents.js",
+        calculator: "../src/pages/calculator/calculator.js",
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
     },
     optimization: {
