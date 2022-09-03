@@ -40,7 +40,7 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
         .pipe(webp({
-            method: 4,
+            method: 2,
         }))
         .pipe(rename(function (path){
             // path.dirname = path.dirname.split("\\").filter(el=> el != 'images').join('\\')

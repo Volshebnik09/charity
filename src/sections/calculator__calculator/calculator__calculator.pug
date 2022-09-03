@@ -1,0 +1,64 @@
+section.calculator__calculator
+    .container
+        h2
+            | Калькулятор
+        p.simpleText
+            |С помощью нашего калькулятора, вы сможете расчитать примерную стоимость услуг, которые будут необходимы именно вам
+        .calculator__calculator__choose
+            .calculator__calculator__choose__text
+                | *Выберете категорию
+            .calculator__calculator__choose__btns
+                .calculator__calculator__choose__btn(data-key='individual')
+                    | По индивидуальной программе
+                .calculator__calculator__choose__btn(data-key='paid')
+                    | Польностью на платной основе
+        .calculator__calculator__grid
+
+            .calculator__calculator__grid__left-side
+                - let key = 0
+                for block in calculatorBlocks
+                    .calculator__calculator__grid__left-side__block
+                        .calculator__calculator__grid__left-side__block__title
+                            != block.title
+                        for option in block.options
+                            .calculator__calculator__grid__left-side__block__option(class!=option.necessarily )
+                                input(
+                                    type="checkbox"
+                                    id!=key
+                                    disabled!=option.necessarily
+                                    checked!=option.necessarily
+                                    value!=option.value
+                                    name!=option.text)
+                                label(for!=key)
+                                    .customCheckBox
+                                        +sourceImg('yes')
+                                    .calculator__calculator__grid__left-side__block__option__text
+                                        !=option.text
+                                    .calculator__calculator__grid__left-side__block__option__price(data-price=option.value data-anotherPrice!=option.anotherValue)
+                                        !=option.value
+                                        |  руб.
+
+                            - key++
+
+
+            .calculator__calculator__grid__right-side
+                .calculator__calculator__grid__right-side__calculation
+                    .calculator__calculator__grid__right-side__calculation__title
+                        | Расчет стоимости услуг:
+                    .calculator__calculator__grid__right-side__calculation__subtitle
+                        | Выбирите желаемые услуги.
+                        | Кликните на поле с права от текста и поставте галочку. Поле над которым расположена * являются не активными, так как в ходят в перечень обязательных услуг.
+                    .calculator__calculator__grid__right-side__calculation__value
+                        | Стоимость услуг:&nbsp
+                        span#totalValue
+                            | 232
+                    .calculator__calculator__grid__right-side__calculation__amount
+                        | Количество услуг:&nbsp
+                        span#totalAmount
+                            | 232
+                    .calculator__calculator__grid__right-side__calculation__btn
+                        | Распечатать
+                .calculator__calculator__grid__right-side__desc
+                    | Цены формируются на основании приказа №1587-ф от 24.09.2021
+                    | Управление социальной защиты и семейной политики Тамбовской области <br>
+                    a(href="https://uprsoc.tmbreg.ru") https://uprsoc.tmbreg.ru

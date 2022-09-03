@@ -12,6 +12,7 @@ function buildPug () {
         .pipe(
             pug({
                 pretty:true,
+                data: require('../src/base/data/data.json')
             })
         )
 
