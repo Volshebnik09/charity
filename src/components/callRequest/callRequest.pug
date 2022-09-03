@@ -1,0 +1,10 @@
+form.callRequest
+    .simpleText
+        | Заказ звонка
+    input(placeholder='Имя')
+    input(placeholder='Email')
+    button Отправить заявку
+    .callRequest__phone
+        +sourceImg('phone2')
+    script
+        include callRequest.js

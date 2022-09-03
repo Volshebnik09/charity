@@ -5,3 +5,4 @@ burgerBtn.addEventListener('click', () => {
     burgerBtn.classList.toggle('open')
     popup.classList.toggle('open')
 })
+

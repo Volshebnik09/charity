@@ -1,0 +1,103 @@
+.callRequest{
+  width: 240px;
+  height: 177px;
+  background: rgba(52, 169, 187, 0.8);
+  position: fixed;
+  bottom: 40px;
+  right: -240px;
+  z-index: 100;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.2s;
+  &.active{
+    right: 0;
+  }
+  input{
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+
+    color: #309BAC;
+    &::placeholder{
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      color: #309BAC;
+
+    }
+  }
+  .simpleText{
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    margin: 2px 40px 17px;
+    &::after{
+      position: absolute;
+      content: '';
+      bottom: -4px;
+      background: #FFFFFF;
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+  }
+  button{
+    background: #34A9BB;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+  }
+  &__phone{
+    cursor: pointer;
+    background: rgba(52, 169, 187, 0.8);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    top:0;
+    left: -60px;
+  }
+}

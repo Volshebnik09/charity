@@ -16,7 +16,7 @@ function buildPug (cb) {
     return src(path.srcPath + '/pages/**/*.pug')
         .pipe(
             pug({
-                pretty:false,
+                pretty:true,
                 data: require('../src/base/data/data.json')
             })
         )
