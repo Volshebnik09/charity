@@ -66,9 +66,9 @@ mixin nav(roots)
         ul
             each root in roots
                 li
-                    a(href=root.url ? root.url : '#')= root.name
+                    a(href=root.url ? root.url : '#' title=root.name)= root.name
                     if (root.additionalItems.length > 0)
                         ul.NAV__additionalItems
                             each item in root.additionalItems
                                 li
-                                    a(href=item.url ? item.url : '#')!= item.name
+                                    a(href=item.url ? item.url : '#' title=item.name)!= item.name
