@@ -16,6 +16,9 @@ body {
 img {
   max-width: 100%;
   vertical-align: top;
+  &[alt=''][title='']{
+    display: none;
+  }
 }
 
 a {
