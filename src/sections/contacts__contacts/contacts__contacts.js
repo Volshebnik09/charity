@@ -26,7 +26,6 @@ export default ()=>{
     contacts.forEach((contact)=>{
         const times = contact.querySelectorAll('.timeFormJs')
         const day = new Date().getDay()
-        times[day].style.fontWeight ='700'
-
+        times[day-1].style.fontWeight ='700'
     })
 }
