@@ -25,6 +25,7 @@
   }
   label{
     cursor: pointer;
+
   }
 
   max-width: 880px;
@@ -375,6 +376,9 @@
           text-align: justify;
 
           color: #000000;
+          a{
+            color:#34A9BB;
+          }
 
         }
         span{
