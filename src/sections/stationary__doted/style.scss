@@ -1,0 +1,29 @@
+.stationary__doted {
+  margin-top: 76px;
+  .M-dotedText{
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    margin-top: 55px;
+    color: #000000;
+    &:nth-child(1){
+      margin-top: 0;
+    }
+  }
+  .stationary__doted__text__inside{
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+
+    color: #000000;
+    margin-left: 47px;
+    margin-top: 24px;
+  }
+}
