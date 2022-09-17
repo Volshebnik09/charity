@@ -3,3 +3,5 @@ index__stages()
 
 import index__supports from '../../sections/index__supports/index__supports'
 index__supports()
+
+require('../../sections/index__news/index__news')

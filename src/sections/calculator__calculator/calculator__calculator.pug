@@ -13,8 +13,12 @@ section.calculator__calculator
                 .calculator__calculator__choose__btn(data-key='paid')
                     | Польностью на платной основе
         .calculator__calculator__grid
-
-            .calculator__calculator__grid__left-side
+            .calculator__calculator__grid__left-side-another
+                p
+                    | Индивидуальная программа формируется управлением социальной защиты и семейной политики Тамбовской области на основании заявления с указанием необходимого перечня предоставляемых услг.
+                    | <br><br>
+                    | Размер ежемесячной платы за предоставление социальных услуг в стационарной форме социального обслуживания рассчитывается на основе тарифов на социальные услуги, но не может превышать 75 процентов среднедушевого дохода получателя социальной услуги, рассчитанного в соответствии с частью 4 статьи 31 Федерального закона
+            .calculator__calculator__grid__left-side.active
                 - let key = 0
                 for block in calculatorBlocks
                     .calculator__calculator__grid__left-side__block
@@ -34,7 +38,7 @@ section.calculator__calculator
                                         +sourceImg('yes')
                                     .calculator__calculator__grid__left-side__block__option__text
                                         !=option.text
-                                    .calculator__calculator__grid__left-side__block__option__price(data-price=option.value data-anotherPrice!=option.anotherValue)
+                                    .calculator__calculator__grid__left-side__block__option__price(data-price=option.value)
                                         !=option.value
                                         |  руб.
 

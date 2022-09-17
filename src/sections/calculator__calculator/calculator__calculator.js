@@ -43,7 +43,7 @@
     }
 
     switchPrices('individual')
-    chooseBtns[0].classList.add('active')
+    chooseBtns[1].classList.add('active')
     calculate();
 
     chooseBtns.forEach(btn => {
@@ -56,7 +56,12 @@
             switchPrices(btn.dataset.key)
             program = btn.dataset.key
             calculate();
+            document.querySelector('.calculator__calculator__grid__left-side-another').classList.toggle('active')
+            document.querySelector('.calculator__calculator__grid__right-side__calculation').classList.toggle('hidden')
+            document.querySelector('.calculator__calculator__grid__left-side').classList.toggle('active')
         })
+    })
+    chooseBtns[0].addEventListener('click',()=>{
     })
 
     checkboxes.forEach(checkbox => {
