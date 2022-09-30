@@ -41,7 +41,8 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
         .pipe(webp({
-            method: 2,
+            method: 5,
+            quality: 90
         }))
         .pipe(rename(function (path){
             // path.dirname = path.dirname.split("\\").filter(el=> el != 'images').join('\\')
@@ -71,7 +72,10 @@ function buildJS() {
         }))
         .pipe(dest(path.buildPath))
 }
-
+function copyPublic(){
+    return src('../public/**/*')
+        .pipe(dest(path.buildPath))
+}
 exports.default = async (cb) =>{
     await del(path.buildPath,{force:true});
     buildPug();
@@ -79,5 +83,6 @@ exports.default = async (cb) =>{
     buildJS();
     transformPicture();
     copyOtherImg();
+    copyPublic();
     cb();
 }

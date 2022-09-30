@@ -5,7 +5,7 @@
     justify-content: center;
     position: relative;
     gap:25px;
-    min-height: 150px;
+    min-height: 427px;
     margin-top: 21px;
   }
   &__card{
@@ -50,9 +50,9 @@
     }
     &__inside{
       cursor: pointer;
-      padding: 0 40px;
+      padding: 20px 40px;
       max-width: 700px;
-      min-height: 280px;
+      min-height: 240px;
       width: calc(100vw - 30px);
       display: none;
       justify-content: center;

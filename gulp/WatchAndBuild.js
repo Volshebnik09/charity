@@ -37,7 +37,7 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/assets/**/*.{png,jpeg}')
     .pipe(webp({
-        method: 5,
+        method: 0,
         quality: 90
     }))
     .pipe(rename(function (path){
