@@ -19,7 +19,7 @@
                     }
                 })
         })
-        totalV.innerHTML = totalValue + ' руб.'
+        totalV.innerHTML = Math.round(totalValue*100)/100 + ' руб.'
         totalA.innerHTML = totalAmount
     }
 
@@ -48,6 +48,9 @@
 
     chooseBtns.forEach(btn => {
         btn.addEventListener("click", () =>{
+            if (btn.classList.contains('active')) {
+                return
+            }
             chooseBtns.forEach(btn=>{
                 btn.classList.remove('active')
             })
@@ -103,7 +106,7 @@
                 <tr>
                     <td>Стоимость услуг:  </td>
                     <td>
-                       <%= options.reduce((acc, a) =>{return acc + parseFloat(a.value)},0) %> руб.
+                       <%= Math.round(options.reduce((acc, a) =>{return acc + parseFloat(a.value)},0)*100)/100 %> руб.
                     </td>
                 </tr>
             </table>

@@ -37,7 +37,8 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/assets/**/*.{png,jpeg}')
     .pipe(webp({
-        method: 1,
+        method: 5,
+        quality: 90
     }))
     .pipe(rename(function (path){
         // path.dirname = path.dirname.split("\\").filter(el=> el != 'images').join('\\')
@@ -64,15 +65,21 @@ function buildJS() {
 
 }
 
+function copyPublic(){
+    return src('../public/**/*')
+        .pipe(dest(path.distPath))
+}
 exports.default= (cb) =>{
     buildPug();
     buildCSS();
     buildJS();
     transformPicture();
     copyOtherImg();
+    copyPublic();
     watch(path.srcPath + '/**/*.pug',buildPug);
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);
+    watch('../public/**/*',copyPublic);
     watch(path.srcPath +'/**/*.{png,jpeg,ico}',copyOtherImg);
     // watch(path.srcPath + '/**/*.js', buildJS)
     cb();
